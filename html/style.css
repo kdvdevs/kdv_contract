@@ -157,19 +157,16 @@ body {
     }
 }
 
-/* Font chữ cho toàn bộ form */
 body, .contract-container, .form-group input, .btn {
     font-family: 'Segoe UI', Arial, sans-serif;
 }
 
-/* Ẩn spinner trên Chrome, Safari, Edge */
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
 
-/* Ẩn spinner trên Firefox */
 input[type=number] {
     -moz-appearance: textfield;
 }
