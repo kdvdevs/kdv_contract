@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Hợp Đồng Bán Xe</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="contract" class="contract-container" style="display:none;">
+        <h2>VEHICLE SALE CONTRACT</h2>
+        <form id="contractForm">
+            <div class="form-group">
+                <label><i class="fas fa-car"></i> Model:</label>
+                <span id="model" class="info"></span>
+            </div>
+            <div class="form-group">
+                <label><i class="fas fa-id-card"></i> Plate:</label>
+                <span id="plate" class="info"></span>
+            </div>
+            <div class="form-group" id="transferCountGroup">
+                <label><i class="fas fa-repeat"></i> Transfer Count:</label>
+                <span id="transferCount" class="info"></span>
+            </div>
+            <div class="form-group">
+                <label><i class="fas fa-dollar-sign"></i> Price:</label>
+                <input
+                    type="number"
+                    id="price"
+                    placeholder="Enter sale price"
+                    required
+                    oninvalid="this.setCustomValidity('Please enter a price between ' + this.min + ' and ' + this.max)"
+                    oninput="this.setCustomValidity('')">            
+            </div>
+            <div class="form-group">
+                <label><i class="fas fa-user"></i> Buyer ID:</label>
+                <input type="number" id="buyerId" min="1" placeholder="Enter buyer ID" required oninvalid="this.setCustomValidity('Please enter a valid ID!')" oninput="this.setCustomValidity('')">
+            </div>
+            <div class="button-group">
+                <button type="submit" class="btn confirm">Confirm <i class="fas fa-check-circle"></i></button>
+                <button type="button" class="btn cancel" id="cancelBtn">Cancel <i class="fas fa-times-circle"></i></button>
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

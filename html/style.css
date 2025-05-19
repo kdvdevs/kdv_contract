@@ -1,0 +1,175 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: #f5f6fa;
+    min-height: 100vh;
+}
+
+.contract-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #181c24;
+    border-radius: 20px;
+    box-shadow: 0 8px 40px 0 rgba(0,0,0,0.18), 0 1.5px 4px 0 rgba(0,0,0,0.10);
+    padding: 36px 44px;
+    min-width: 350px;
+    max-width: 95vw;
+    color: #f5f6fa;
+    border: 1.5px solid #232a36;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contract-container h2 {
+    text-align: center;
+    color: #3be382;
+    margin-bottom: 28px;
+    letter-spacing: 1.5px;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.form-group {
+    margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.form-group label {
+    min-width: 160px;
+    max-width: 180px;
+    color: #8f98b2;
+    font-weight: 600;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    white-space: nowrap; /* Không cho xuống dòng */
+}
+
+.form-group .info {
+    background: #232a36;
+    padding: 14px 24px;
+    border-radius: 10px;
+    color: #f5f6fa;
+    font-weight: 500;
+    min-width: 120px;
+    font-size: 1.12rem;
+    border: 1px solid #232a36;
+    transition: border 0.2s;
+    flex: 1;
+    min-width: 0;
+    box-sizing: border-box;
+}
+
+.form-group input {
+    margin-left: 0;
+    padding: 14px 24px 14px 40px;
+    border-radius: 10px;
+    border: none;
+    background: #181c24;
+    color: #f5f6fa;
+    font-size: 1.12rem;
+    outline: none;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-weight: 500;
+    flex: 1;
+    min-width: 0;
+    box-sizing: border-box;
+    transition: border 0.2s, box-shadow 0.2s;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.10);
+}
+
+.form-group input::placeholder {
+    color: #6be6a7;
+    opacity: 0.7;
+    font-weight: 400;
+}
+
+.form-group input:focus {
+    border: 1.5px solid #3be382;
+    background: #20242d;
+}
+
+.button-group {
+    display: flex;
+    justify-content: flex-end;
+    gap: 18px;
+    margin-top: 32px;
+}
+
+.btn {
+    padding: 18px 0;
+    width: 210px;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.18rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.18s, box-shadow 0.18s, color 0.18s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    letter-spacing: 0.5px;
+    box-shadow: 0 2px 8px 0 rgba(59,227,130,0.04);
+}
+
+.confirm {
+    background: #0a2cff;
+    color: #fff;
+}
+
+.confirm:hover {
+    background: #1a4fff;
+    color: #fff;
+}
+
+.cancel {
+    background: #ff3c3c;
+    color: #fff;
+    border: 1.5px solid #ff3c3c;
+}
+
+.cancel:hover {
+    background: #c82333;
+    color: #fff;
+}
+
+@media (max-width: 600px) {
+    .contract-container {
+        padding: 18px 8vw;
+        min-width: unset;
+    }
+    .form-group label, .form-group .info {
+        min-width: 80px;
+        font-size: 0.95rem;
+    }
+    .btn {
+        padding: 10px 18px;
+        font-size: 1rem;
+    }
+}
+
+/* Font chữ cho toàn bộ form */
+body, .contract-container, .form-group input, .btn {
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+/* Ẩn spinner trên Chrome, Safari, Edge */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Ẩn spinner trên Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
