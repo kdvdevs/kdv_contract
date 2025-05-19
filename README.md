@@ -43,8 +43,6 @@ A modern, safe, and customizable vehicle contract system for ESX-based FiveM ser
 - [ESX Legacy](https://github.com/esx-framework/esx_core)
 - [mysql-async](https://github.com/brouznouf/fivem-mysql-async) or [oxmysql](https://github.com/overextended/oxmysql) (edit server_scripts if using oxmysql)
 - [ox_lib](https://github.com/overextended/ox_lib) (for some optional features)
-- FontAwesome CDN (for UI icons)
-
 ---
 
 ## Installation
