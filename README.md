@@ -76,3 +76,10 @@ A modern, safe, and customizable vehicle contract system for ESX-based FiveM ser
 - Players use the contract item near their vehicle to initiate a sale.
 - Admins can add transfer counts with `/addtransfer [plate] [count]`.
 - All transactions are logged to Discord if enabled.
+
+---
+
+## Support
+
+For support, questions, or suggestions, join our Discord:  
+**KDV Dev** [https://discord.gg/z3RM2p3rWm](https://discord.gg/z3RM2p3rWm)
